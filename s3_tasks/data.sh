@@ -7,4 +7,3 @@ echo "This is a file" > file
 cat file
 echo "This is the overriden content" > file
 cat file
-
