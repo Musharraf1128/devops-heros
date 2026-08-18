@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 name="Musharraf"
 roll_no="10447"
-comment="No much!"
+comment="Not much!"
 
-echo "I am name: ${name}, roll_no:${roll_no}, and my comment:${comment}"
+echo "name: ${name}, roll_no:${roll_no}, comment:${comment}"
