@@ -146,3 +146,34 @@ name: Musharraf, roll_no:10447, comment:Not much!
 ### Screenshot
 
 ![variable.sh output](./screenshots/variable.png)
+
+
+## 6. while_loop.sh
+
+### Code
+```bash
+#!/bin/bash
+
+while true; do
+    read -p "enter a number (or 'q' to quit): " input
+
+    if [[ $input == "q" ]]; then
+        echo "exiting the loop!"
+        break
+    elif ! [[ $input =~ ^[0-9]+$ ]]; then
+        echo "invalid input, enter a valid number"
+        continue
+    fi
+
+    echo "you entered: $input"
+done
+
+
+```
+### What is understood:
+```
+It is an infinite loop. It does the the following:
+1. if we enter a number, it prints it back.
+2. if we enter anything other than a number it print invalid input and continues (we use regex to filter out invalid inputs)
+3. if we enter 'q', it breaks the loop and exits the programs.
+```
